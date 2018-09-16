@@ -47,7 +47,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-d3.csv("../data/PadreHimalayaFollowersData.csv", type, function(error, data) {
+d3.csv("./data/PadreHimalayaFollowersData.csv", type, function(error, data) {
   if (error) throw error;
 
   var path = svg.datum(data).selectAll("path")
